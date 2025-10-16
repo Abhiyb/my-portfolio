@@ -25,8 +25,8 @@ const Projects = () => {
       title: "Connect – College Media Platform",
       description:
         "A social network built for college students, departments, and clubs to communicate, collaborate, and share updates in real-time.",
-      image: project3,
-      tags: [ "MongoDB", "Express", "React", "Node.js"],
+      image: project2,
+      tags: ["MongoDB", "Express", "React", "Node.js"],
       highlights: [
         "Interactive student dashboards",
         "Real-time event and post updates",
@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Family Credit Card Circle",
       description:
         "A secure fintech microservice-based platform enabling families to collaboratively manage credit card usage and expenses.",
-      image: project2,
+      image: project3,
       tags: ["Spring Boot", "MySQL", "React", "Tailwind CSS"],
       highlights: [
         "Microservice architecture for scalability",
@@ -78,32 +78,30 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="space-y-24">
+        <div className="space-y-32">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className={`grid lg:grid-cols-2 gap-12 items-center ${
-                idx % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
+              className="grid lg:grid-cols-2 gap-16 items-center"
             >
-              {/* Project Image */}
+              {/* Image Section */}
               <div
-                className={`relative group overflow-hidden rounded-2xl border-2 ${
+                className={`group relative overflow-hidden rounded-2xl border-2 shadow-lg ${
                   project.accent === "teal"
                     ? "border-teal-400/30 hover:border-teal-400/60"
                     : "border-amber-400/30 hover:border-amber-400/60"
-                } transition-all duration-500 max-h-[400px]`}
+                } transition-all duration-500`}
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500" />
+                  className="w-full h-[380px] object-cover object-left rounded-2xl transition-transform duration-700 group-hover:scale-105"
+  />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
 
-              {/* Project Content */}
-              <div className="space-y-6">
+              {/* Content Section */}
+              <div className="space-y-6 lg:text-left lg:pr-16">
                 <div>
                   <span
                     className={`text-sm uppercase tracking-widest font-bold ${
@@ -123,24 +121,19 @@ const Projects = () => {
                 {/* Highlights */}
                 <ul className="space-y-3">
                   {project.highlights.map((item, hIdx) => (
-                    <li
-                      key={hIdx}
-                      className="flex items-start gap-3 text-gray-300"
-                    >
+                    <li key={hIdx} className="flex items-start gap-3 text-gray-300">
                       <span
                         className={`mt-2 w-2 h-2 rounded-full ${
-                          project.accent === "teal"
-                            ? "bg-teal-400"
-                            : "bg-amber-400"
+                          project.accent === "teal" ? "bg-teal-400" : "bg-amber-400"
                         }`}
-                      ></span>
+                      />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-3 pt-2">
+                <div className="flex flex-wrap gap-3 pt-2 justify-start">
                   {project.tags.map((tag, tagIdx) => (
                     <span
                       key={tagIdx}
@@ -156,7 +149,7 @@ const Projects = () => {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex flex-wrap gap-4 pt-6">
+                <div className="flex flex-wrap gap-4 pt-6 justify-start">
                   <a
                     href={project.demoUrl}
                     target="_blank"
@@ -168,10 +161,7 @@ const Projects = () => {
                     }`}
                   >
                     View Project
-                    <ArrowRight
-                      size={18}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </a>
                   <a
                     href={project.githubUrl}
