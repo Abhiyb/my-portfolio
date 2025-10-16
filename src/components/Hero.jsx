@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center px-6 lg:px-20 bg-gradient-to-br from-[#07110f] via-[#081b1a] to-[#0d1a18] text-white relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-6 lg:px-20 bg-gradient-to-br from-[#07110f] via-[#081b1a] to-[#0d1a18] text-white relative overflow-hidden pt-16 lg:pt-0" // Added pt-16 for mobile to clear Navbar
     >
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(0,255,180,0.1),_transparent_60%)]" />
@@ -20,15 +20,13 @@ const Hero = () => {
 
       <div className="relative z-10 grid lg:grid-cols-2 items-center gap-16 max-w-7xl mx-auto">
         {/* Left Section */}
-        <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 border border-teal-400/40 rounded-full bg-teal-400/10 text-teal-400 font-medium">
+        <div className="space-y-6 text-center lg:text-left">
+          <div className="inline-flex items-center justify-center lg:justify-start gap-2 px-4 py-2 border border-teal-400/40 rounded-full bg-teal-400/10 text-teal-400 font-medium">
             🚀 Open to Full-Time Opportunities
           </div>
 
           <div>
-            <p className="text-orange-400 text-lg font-semibold mb-2">
-              Hello, I'm
-            </p>
+            <p className="text-orange-400 text-lg font-semibold mb-2">Hello, I'm</p>
             <h1 className="text-6xl lg:text-7xl font-extrabold mb-2">
               <span className="bg-gradient-to-r from-white via-white to-teal-400 bg-clip-text text-transparent">
                 Abhishekh
@@ -48,7 +46,7 @@ const Hero = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
             <button
               onClick={() => scrollToSection("projects")}
               className="px-8 py-4 bg-teal-500 text-white font-semibold rounded-full hover:bg-teal-600 hover:shadow-[0_0_20px_rgba(45,212,191,0.4)] transition-all"
@@ -64,7 +62,7 @@ const Hero = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-6 pt-8 text-gray-400">
+          <div className="flex items-center gap-6 pt-8 justify-center lg:justify-start text-gray-400">
             <a
               href="https://github.com/Abhiyb"
               target="_blank"
