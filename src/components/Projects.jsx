@@ -18,7 +18,7 @@ const Projects = () => {
         "Secure authentication & performance tracking",
       ],
       demoUrl: "https://investo-frontend.netlify.app/register",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Abhiyb/investment-portfolio-tracker",
       accent: "teal",
     },
     {
