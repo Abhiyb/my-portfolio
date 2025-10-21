@@ -81,7 +81,7 @@ export const Contact = () => {
               Looking for a passionate developer who can contribute from day one.
             </p>
             <a
-              href="https://drive.google.com/file/d/1JOmWoq7JKxVZiJoRDwdyjGpneArCYKuH/view"
+              href="https://drive.google.com/file/d/1ohO7sqNa7RWhDG3yoBpZW1KlbFxsNr6i/view?usp=drivesdk"
               download
               className="inline-flex items-center gap-3 px-7 py-3 md:px-9 md:py-4 bg-white text-[#00bfff] rounded-full font-semibold shadow-md hover:shadow-lg transition-all hover:-translate-y-1 text-sm md:text-base"
             >
