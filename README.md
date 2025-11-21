@@ -32,7 +32,7 @@ Built using **React** and **Tailwind CSS**.
 - Contact and social links  
 
 ## 📬 Contact
-**Email:** abhiybdrive@gmail.com  
+**Email:** abhishekyb03@gmail.com
 **LinkedIn:** https://linkedin.com/in/abhishekh03  
 
 ---
