@@ -22,7 +22,7 @@ Built using **React** and **Tailwind CSS**.
 ![Home](./images/home.png)
 
 ### About Page
-![About](./screenshots/about.png)
+![About](./images/about.png)
 
 
 ## 🚀 Features
