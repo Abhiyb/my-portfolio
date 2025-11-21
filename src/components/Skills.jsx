@@ -17,15 +17,15 @@ const Skills = () => {
     },
     {
       icon: Database,
-      title: "Databases & Cloud",
+      title: "Databases",
       color: "teal",
-      skills: ["MongoDB", "MySQL", "PostgreSQL", "Cloud Computing", "AWS"],
+      skills: ["MongoDB", "MySQL", "PostgreSQL"],
     },
     {
       icon: Wrench,
       title: "DevOps & Tools",
       color: "amber",
-      skills: ["Docker", "Kubernetes", "Jenkins", "Git", "CI/CD"],
+      skills: ["Docker", "Kubernetes", "Jenkins", "Git", "CI/CD Pipelines","ArgoCD","JFrog Artifactory"],
     },
   ];
 
@@ -35,24 +35,20 @@ const Skills = () => {
     "DBMS",
     "Operating Systems",
     "Computer Networks",
-    "Microservices",
-  ];
-
-  const devTools = [
-    "HTML/CSS",
-    "Tailwind CSS",
-    "MySQL Workbench",
-    "MongoDB Compass",
-    "IntelliJ IDEA",
-    "Postman",
-    "Swagger",
-    "ArgoCD",
-    "AKHQ",
-    "JFrog Artifactory",
-    "GitHub",
-    "REST APIs",
     
   ];
+
+ const devTools = [
+  "IntelliJ IDEA",
+  "VS Code",
+  "Postman",
+  "Swagger",
+  "MySQL Workbench",
+
+  "GitHub"
+];
+
+  
 
   return (
     <section

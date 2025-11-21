@@ -94,19 +94,20 @@ export const Contact = () => {
         {/* Social links */}
         <div className="flex justify-center gap-5 md:gap-6 mb-6">
           <a
-            href="https://github.com/Abhiyb"
+            href="https://github.com/Abhiyb/my-portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className="group"
           >
             <div className="p-4 md:p-5 bg-[#0f141a] rounded-2xl border border-transparent hover:border-[#00e0b8]/40 transition-all text-center">
               <Github className="w-7 h-7 md:w-8 md:h-8 text-gray-400 group-hover:text-[#00e0b8] mx-auto mb-1 transition-colors" />
-              <span className="text-sm md:text-base font-medium">GitHub</span>
+              <span className="text-sm md:text-base font-medium">Portfolio Code</span>
             </div>
           </a>
 
           <a
             href="https://www.linkedin.com/in/abhishekh03/"
+            
             target="_blank"
             rel="noopener noreferrer"
             className="group"
@@ -116,6 +117,7 @@ export const Contact = () => {
               <span className="text-sm md:text-base font-medium">LinkedIn</span>
             </div>
           </a>
+
         </div>
 
         {/* Footer */}

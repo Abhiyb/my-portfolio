@@ -33,7 +33,7 @@ const Projects = () => {
         "Role-based department management",
       ],
       demoUrl: "https://connect-lemon-delta.vercel.app/auth?type=student",
-      githubUrl: "https://github.com/Abhiyb/Connect",
+      githubUrl: "https://github.com/Abhiyb/NIE-CONNECT",
       accent: "amber",
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
         "Transaction and limit management",
       ],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Abhiyb/credify",
       accent: "teal",
     },
   ];
@@ -73,17 +73,15 @@ const Projects = () => {
             Featured <span className="text-teal-400">Projects</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            A selection of my best projects — combining functionality, performance, and design excellence.
+            A selection of my best projects — combining functionality,
+            performance, and design excellence.
           </p>
         </div>
 
         {/* Projects Grid */}
         <div className="space-y-32">
           {projects.map((project, idx) => (
-            <div
-              key={idx}
-              className="grid lg:grid-cols-2 gap-16 items-center"
-            >
+            <div key={idx} className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Image Section */}
               <div
                 className={`group relative overflow-hidden rounded-2xl border-2 shadow-lg ${
@@ -96,7 +94,7 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-[380px] object-cover object-left rounded-2xl transition-transform duration-700 group-hover:scale-105"
-  />
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
 
@@ -105,7 +103,9 @@ const Projects = () => {
                 <div>
                   <span
                     className={`text-sm uppercase tracking-widest font-bold ${
-                      project.accent === "teal" ? "text-teal-400" : "text-amber-400"
+                      project.accent === "teal"
+                        ? "text-teal-400"
+                        : "text-amber-400"
                     }`}
                   >
                     PROJECT {String(idx + 1).padStart(2, "0")}
@@ -121,10 +121,15 @@ const Projects = () => {
                 {/* Highlights */}
                 <ul className="space-y-3">
                   {project.highlights.map((item, hIdx) => (
-                    <li key={hIdx} className="flex items-start gap-3 text-gray-300">
+                    <li
+                      key={hIdx}
+                      className="flex items-start gap-3 text-gray-300"
+                    >
                       <span
                         className={`mt-2 w-2 h-2 rounded-full ${
-                          project.accent === "teal" ? "bg-teal-400" : "bg-amber-400"
+                          project.accent === "teal"
+                            ? "bg-teal-400"
+                            : "bg-amber-400"
                         }`}
                       />
                       <span>{item}</span>
@@ -150,8 +155,9 @@ const Projects = () => {
 
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-4 pt-6 justify-start">
-                  <a
-                    href={project.demoUrl}
+                  {project.demoUrl !== "#" && (
+                    <a
+                    href={project.demoUrl}//
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold transition-all hover:-translate-y-1 ${
@@ -162,7 +168,8 @@ const Projects = () => {
                   >
                     View Project
                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  </a> )}
+                 
                   <a
                     href={project.githubUrl}
                     target="_blank"
@@ -172,6 +179,7 @@ const Projects = () => {
                     <Github size={18} />
                     Source Code
                   </a>
+                  
                 </div>
               </div>
             </div>

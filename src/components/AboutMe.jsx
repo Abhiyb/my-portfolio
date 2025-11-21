@@ -139,8 +139,7 @@ const AboutMe = () => {
                 Technical Club Leader
               </h4>
               <p className="text-gray-400 leading-relaxed">
-                Led college technical clubs, inspiring peers toward growth in
-                technology and innovation.
+              Led 25 members and organized 5+ workshops and hackathons to foster coding and innovation.
               </p>
             </div>
 
@@ -153,8 +152,7 @@ const AboutMe = () => {
                 2nd Place – NIE Challenge 2024
               </h4>
               <p className="text-gray-400 leading-relaxed">
-                Recognized for exceptional problem-solving skills and coding
-                proficiency in competitive programming.
+Ranked 2nd out of 200+ participants. demonstrated strong problem-solving and coding skills.
               </p>
             </div>
 
@@ -167,9 +165,7 @@ const AboutMe = () => {
                 300+ DSA Problems
               </h4>
               <p className="text-gray-400 leading-relaxed">
-                Strengthened algorithmic thinking and coding depth by solving
-                over 300 problems on GeeksforGeeks.
-              </p>
+              Enhanced algorithmic thinking by solving 300+ problems on GeeksforGeeks.  </p>
             </div>
           </div>
         </div>
