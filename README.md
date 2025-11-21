@@ -24,10 +24,6 @@ Built using **React** and **Tailwind CSS**.
 ### About Page
 ![About](./screenshots/about.png)
 
-### Projects Section
-![Projects](./screenshots/projects.png)
-
-*(Add your screenshots inside a folder named `/screenshots`)*
 
 ## 🚀 Features
 - Responsive UI  
