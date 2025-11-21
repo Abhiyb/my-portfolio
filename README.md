@@ -19,7 +19,7 @@ Built using **React** and **Tailwind CSS**.
 ## 📸 Screenshots
 
 ### Home Page
-![Home](./screenshots/home.png)
+![Home](./images/home.png)
 
 ### About Page
 ![About](./screenshots/about.png)
